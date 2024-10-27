@@ -2,7 +2,7 @@ package com.enp.melodyflow.api.model.data;
 
 import java.util.ArrayList;
 
-public class Root {
+public class ObjectTrackById {
 	
 	private Album album;
 	private ArrayList<Artist> artists;
