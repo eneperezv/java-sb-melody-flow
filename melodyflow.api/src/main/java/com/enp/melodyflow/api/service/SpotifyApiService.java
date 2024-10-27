@@ -57,7 +57,7 @@ public class SpotifyApiService {
         return response.getBody();
     }
     
- // Obtener detalles de un artista por nombre
+	// Obtener detalles de un artista por nombre
     public Map<String, Object> searchArtistByName(String artistName) {
         String url = apiUrl + "/search?q=" + artistName + "&type=artist&limit=1";
         ResponseEntity<Map> response = restTemplate.exchange(url, HttpMethod.GET, createAuthHeader(), Map.class);
