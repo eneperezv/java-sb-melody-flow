@@ -1,12 +1,26 @@
 package com.enp.melodyflow.api.controller;
 
+/*
+ * @(#)SpotifyController.java 1.0 25/10/2024
+ * 
+ * El código implementado en este formulario esta protegido
+ * bajo las leyes internacionales del Derecho de Autor, sin embargo
+ * se entrega bajo las condiciones de la General Public License (GNU GPLv3)
+ * descrita en https://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+/**
+ * @author eliezer.navarro
+ * @version 1.0
+ * @since 1.0
+ */
+
 import java.util.Map;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.enp.melodyflow.api.service.SpotifyApiService;
