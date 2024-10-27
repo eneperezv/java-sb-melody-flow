@@ -27,12 +27,15 @@ public class SpotifyController {
         return ResponseEntity.ok(trackData);
     }
     
- // Endpoint para buscar un artista por nombre
-    @GetMapping("/artist/search")
-    public ResponseEntity<Map<String, Object>> searchArtistByName(@RequestParam String name) {
+    // Endpoint para buscar un artista por nombre
+    @GetMapping("/artist/search/{name}")
+    public ResponseEntity<Map<String, Object>> searchArtistByName(@PathVariable String name) {
         Map<String, Object> artistData = spotifyApiService.searchArtistByName(name);
         return ResponseEntity.ok(artistData);
     }
+    
+    // Endpoint para obtener discografia de artista
+    
 
     // Endpoint para obtener canciones de un álbum por ID
     @GetMapping("/album/{albumId}/tracks")
